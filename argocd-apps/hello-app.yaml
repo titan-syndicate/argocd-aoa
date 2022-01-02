@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: sample-app/
+    path: deployment
     repoURL: https://github.com/titan-syndicate/hello-deployment/
     targetRevision: HEAD
   syncPolicy:
