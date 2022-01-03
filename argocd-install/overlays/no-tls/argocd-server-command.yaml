@@ -1,7 +1,10 @@
 - op: replace
   path: /spec/template/spec/containers/0/command
   value:
-    - test
+    - argocd-server
+    - --repo-server
+    - argocd-repo-server:8081
+    - --insecure
 # apiVersion: apps/v1
 # kind: Deployment
 # metadata:
