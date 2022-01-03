@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: sample-app
-  namespace: hello
+  namespace: echo
 spec:
   destination:
     namespace: sample-app
@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: deployment
-    repoURL: https://github.com/titan-syndicate/hello-deployment/
+    repoURL: https://github.com/titan-syndicate/echo-deployment/
     targetRevision: HEAD
   syncPolicy:
     syncOptions:
