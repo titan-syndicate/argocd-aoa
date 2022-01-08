@@ -1,4 +1,7 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
+namespace: argocd
 resources:
+  - ./argocd-namespace.yaml
   - https://raw.githubusercontent.com/argoproj/argo-cd/7f09331e3f25d879614baf9417ac285f60fcd7b0/manifests/install.yaml
   - ./argocd-ingress.yaml
+  - ./argocd-aoa.yaml
